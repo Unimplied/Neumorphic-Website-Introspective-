@@ -61,6 +61,7 @@ h1 {
     box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83), 6px 6px 16px 0 rgba(217,210,200,0.51);
     margin-top: 25px;
 }
+
 .quote-card {
     background: #EFEEEE;
     border: 1px solid rgba(255,255,255,0.20);
@@ -72,30 +73,50 @@ h1 {
     box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83), 6px 6px 16px 0 rgba(217,210,200,0.51);
     margin-top: 25px;
 }
+
 .button {
-    border: 1px solid rgba(255,255,255,0.20);
-    border-radius:12px;
+    /* background: #dbdbdb;
+    border-radius:12px;    
+    box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83), 6px 6px 16px 0 rgba(217,210,200,0.51);
+     */
+     border-radius: 50px;
+     background:#d4d4d4;
+     box-shadow:  5px 5px 25px #d8d8d8, -5px -5px 25px #ffffff;
+     
     width: 100px;    
     overflow-wrap: break-word;
     text-align: center;
-    box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83), 6px 6px 16px 0 rgba(217,210,200,0.51), rgba(255,255,255,0.83);
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 11px
+    font-size: 11px;
+    transition: transform .2s;
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    outline: none;
+    border: none;
+
+    border-radius: 50px;
+    background: #ededed;
+    box-shadow: inset 5px 5px 25px #d8d8d8,
+                inset -5px -5px 25px #ffffff;
 }
 .quote {
     font-size: 20px;
     color: rgb(73, 73, 73)
-}
-.grad {
-    background-image: linear-gradient(to bottom right,#c9c9c9, #dadada );
 }
 .zoom {
     transition: transform .2s;
 }
 .zoom:hover {
     transform: scale(1.01);
-    box-shadow: -9px -9px 36px 0 rgba(255,255,255,0.93), 9px 9px 26px 0 rgba(217,210,200,0.71);
+    box-shadow: -9px -9px 26px 0 rgba(255,255,255,0.93), 9px 9px 26px 0 rgba(217,210,200,0.71);
 }
 .brand-zoom {
     transition: transform .4s;
@@ -111,9 +132,18 @@ h1 {
 }
 .img-zoom {
     transition: transform .4s;
+    outline: none;
+    border: none;
+}
+.img-active {
+    outline: none;
+    border: none;
+    transform: scale(.09);
 }
 .img-zoom:hover {
     transform: scale(1.1);
+    outline: none;
+    border: none;
 }
 .fade-in-header {
     animation: fadeIn 300ms ease-in;
